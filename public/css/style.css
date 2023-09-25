@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+}
+
+.card img{
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+ 
+}
+.card:hover{
+  transform: scale(0.9);
+}
+.card{
+  width: 100%;
+  transition: 0.25s;
+}
+.bodysection{
+  margin-top: 100px;
+}
+.navbar a:hover{
+  background-color:gray;
+
+
+}
+

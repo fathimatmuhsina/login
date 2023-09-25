@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Tasty World</title>
+  <link rel="icon" type="image/x-icon" href="mainlogo.png">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+ <script>
+    window.onload = function() {
+      if (typeof history.pushState === 'function') {
+        history.pushState(null, null, window.location.href);
+        window.onpopstate = function() {
+          history.go(1);
+        };
+      }
+    };
+  </script>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-dark py-1 fixed-top ">
+   
+    <div class="container-fluid">
+      <a class="navbar-brand text-success fw-bold fs-1" href="#"><img src="headlogo.png" alt="image" class="rounded-circle" style="width: 100px;"></a>
+      <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-3 fs-4">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Offers</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Help</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex" action="/logout?_method=DELETE" method="POST">
+          <button class="btn btn-dark p-2 fs-4 fw-3" type="submit">Log out</button>
+        </form>
+      
+          
+      </div>
+    </div>
+  </nav>
+</header>
+  <main >
+  
+<div class="row bg-white" style="margin-top: 150px;">
+
+
+<!-- <div
+  id="carouselMultiItemExample"
+  class="carousel slide carousel-dark text-center"
+  data-mdb-ride="carousel"
+> -->
+
+  <!-- Inner -->
+  
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <h2 class="text-center">Best Offers For You</h2>
+    <br><br>
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card border-0">
+              <img
+                src="1.webp"
+                class="card-img-top"
+                alt="Waterfall"
+              />
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card border-0">
+              <img
+                src="11.webp"
+                class="card-img-top"
+                alt="Sunset Over the Sea"
+              />
+             
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card border-0">
+              <img
+                src="111.webp"
+                class="card-img-top"
+                alt="Sunset over the Sea"
+              />
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Carousel wrapper -->
+</div>
+
+<div class="container-fluid mt-5 d-flex">
+ 
+  <div class="row">
+    <div class="col-2  "></div>
+    <div class="col-8">
+      <h2>Hai <%= name %>, what's on your mind?</h2>
+      <br><br>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-6 col-xl-3 ">
+          <div class="card border-0 m-1" >
+          <img src="123.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+         
+            </div>
+          </div>
+          <br><br><br>
+        </div>
+
+      <div class="col-12  col-md-6 col-xl-3 ">
+        <div class="card border-0 m-1">
+          <img src="00.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           
+          </div>
+        </div>
+        <br><br><br>
+      </div>
+        <div class="col-12 col-md-6 col-xl-3">   
+             <div class="card border-0 m-1 ">
+              <img src="999.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+                </div>
+            </div>
+            <br><br><br>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-3 ">      
+        <div class="card border-0 m-1">
+          <img src="99.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+            </div>
+        </div>
+        <br><br><br>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-3">      
+        <div class="card border-0">
+          <img src="9.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+            </div>
+          </div>
+          <br><br><br>
+        </div>
+
+      <div class="col-12 col-md-6 col-xl-3 ">      
+        <div class="card border-0" >
+          <img src="338.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some ssquick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+            </div>
+        </div>
+        <br><br><br>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3">      
+        <div class="card border-0" >
+          <img src="334.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+            </div>
+        </div>
+        <br><br><br>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3 ">      
+        <div class="card border-0" >
+          <img src="332.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+            </div>
+        </div>
+        <br><br><br>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3 ">      
+        <div class="card border-0" >
+          <img src="331.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+            </div>
+        </div>
+        <br><br><br>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3 ">      
+        <div class="card border-0" >
+          <img src="333.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+            </div>
+        </div>
+        <br><br><br>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3 ">      
+        <div class="card border-0" >
+          <img src="125.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+            </div>
+        </div>
+        <br><br><br>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3 ">      
+        <div class="card border-0">
+          <img src="124.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+            </div>
+        </div>
+        <br><br><br>
+      </div>
+    </div>
+   </div>
+      <div class="col-2 "></div>
+  </div>
+</div>
+
+</main>
+
+
+
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+ 
+  <div class="container p-4">
+  
+    <section class="mb-4">
+ 
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+ 
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+
+
+    </section>
+
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2024 Copyright:
+    <a class="text-white" href="https://tastyfood.com.com/">tastyfood.com</a>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
